@@ -1,31 +1,31 @@
 const Api = {
-  apiUrl: 'https://projeto-final-mod03.herokuapp.com/',
-  fetchGetAll: () => fetch(`${Api.apiUrl}/listar`),
-  fetchGetById: id => fetch(`${Api.apiUrl}/listarnome/${id}`),
+  apiUrl: 'https://projeto-final-mod03.herokuapp.com/Grunge',
+  fetchGetAll: () => fetch(`${Api.apiUrl}/listall`),
+  fetchGetById: id => fetch(`${Api.apiUrl}/listname/${id}`),
   
-  fetchPost: (banco) => {
-    return fetch(`${Api.apiUrl}/adicionar`, {
+  fetchPost: (vaga) => {
+    return fetch(`${Api.apiUrl}/add`, {
       method: 'POST',
       headers: new Headers({
         "Content-Type": "application/json",
       }),
-      body: JSON.stringify(banco)
+      body: JSON.stringify(vaga)
     })
   },
-  fetchPut: (banco, id) => {
+  fetchPut: (vaga, id) => {
     return fetch(`${Api.apiUrl}/update/${id}`, {
       method: 'PUT',
       headers: new Headers({
         "Content-Type": "application/json",
       }),
-      body: JSON.stringify(banco)
+      body: JSON.stringify(vaga)
     })
   },
   fetchDelete: (id) => {
-    return fetch(`${Api.apiUrl}/deletar/${id}`, {
+    return fetch(`${Api.apiUrl}/delete/${id}`, {
       method: 'DELETE'
     })
   }
 }
 
-export default Api;
+export default Api; 

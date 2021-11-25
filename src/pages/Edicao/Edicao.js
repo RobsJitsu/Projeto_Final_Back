@@ -69,7 +69,7 @@ const Edicao = (props) => {
                     placeholder="Digite o nome da banda"
                     onChange={handleFieldsChange}
                   />
-                  <label htmlFor="floatingInput">nome</label>
+                  <label htmlFor="floatingInput">Nome</label>
                 </div>
               </div>
               <div className="col">
@@ -108,12 +108,9 @@ const Edicao = (props) => {
                     className="form-control"
                     name="musica"
                     id="floatingsenioridade"
-                    value={vaga.musica}
+                    placeholder="Digite a musica"
                     onChange={handleFieldsChange}
                     >
-                    <option value="junior">Junior</option>
-                    <option value="pleno">pleno</option>
-                    <option value="senior">senior</option>
                   </select>
                   <label htmlFor="floatingsenioridade">Musica</label>
                 </div>

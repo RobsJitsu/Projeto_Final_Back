@@ -70,8 +70,8 @@ const Cadastro = (props) => {
                     <option value="junior">Junior</option>
                     <option value="pleno">Pleno</option>
                     <option value="pleno">Senior</option>
-                  </select>
-                  <label htmlFor="floatingsenioridade">musica</label>
+                    <label htmlFor="floatingsenioridade">musica</label>
+                  </select>                  
                 </div>
               </div>
             </div>

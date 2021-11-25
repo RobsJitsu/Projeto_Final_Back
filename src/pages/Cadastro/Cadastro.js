@@ -67,9 +67,8 @@ const Cadastro = (props) => {
               <div className="col">
                 <div className="form-floating">
                   <select className="form-control" name="musica" id="floatingsenioridade" placeholder="Qual a música">
-                    <option value="junior">Junior</option>
-                    <option value="pleno">Pleno</option>
-                    <option value="pleno">Senior</option>
+                    <option value="musica">musica</option>
+                    
                     <label htmlFor="floatingsenioridade">musica</label>
                   </select>                  
                 </div>
